@@ -10,7 +10,7 @@ This mini project is separated into 2 sections. One is data extraction and trans
  - The second part of the project would then sketch ERD of the tables to identify the relationships of these tables by identifying primary and foreign keys. Subsequently, CSV files would be imported into Postrgres database.  
 
 ## Project Method
-### Data Extraction and Transformation
+### I) Data Extraction and Transformation
 #### Create the Category DataFrames
     1. First is to import dependencies such as Pandas library and Numpy
     2. Extract data from excel file named "crowfunding.xlsx" into pandas dataframe named as "crowfunding_info_df"
@@ -38,7 +38,7 @@ This mini project is separated into 2 sections. One is data extraction and trans
 
 #### Create the Contacts DataFrame
 
-### Data Storage
+### II) Data Storage
 #### Create the Crowdfunding Database
 
 
