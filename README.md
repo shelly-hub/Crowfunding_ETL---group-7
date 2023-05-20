@@ -12,22 +12,30 @@ This mini project is separated into 2 sections. One is data extraction and trans
 ## Project Method
 ### Data Extraction and Transformation
 #### Create the Category DataFrames
- 1. First is to import dependencies such as Pandas library and Numpy
- 2. Extract data from excel file named "crowfunding.xlsx" into pandas dataframe
- 3. The column of "category & subcategory" needs to be separated using df.str.split() function to extract category information
- 4. Once a single category dataframe is made, additional column named "category_id" is created
- 5. The column "category_id" is giving each unique category an id number with a string name "cat" attached with each number 
- 6. Each id is created using numpy np.arange() function, and each string "cat" is attached to the id using for loop function
- 7. Finally, this category dataframe is exported as CSV file named as "category.csv"
+    1. First is to import dependencies such as Pandas library and Numpy
+    2. Extract data from excel file named "crowfunding.xlsx" into pandas dataframe named as "crowfunding_info_df"
+    3. The column of "category & subcategory" needs to be separated using df.str.split() function to extract category information
+    4. Once a single category dataframe is made, additional column named "category_id" is created
+    5. The column "category_id" is giving each unique category an id number with a string name "cat" attached with each number 
+    6. Each id is created using numpy np.arange() function, and each string "cat" is attached to the id using for loop function
+    7. Finally, this category dataframe (category_df) is exported as CSV file named as "category.csv"
 
 #### Create the Subcategory DataFrames
- 1. Same as above, with amendment start from no.4 method above
- 2. Once a single subcategory dataframe is made, additional column named "subcategory_id" is created
- 3. The column "category_id" is giving each unique subcategory an id number with a string name "subcat" attached with each number 
- 4. Each id is created using numpy np.arange() function, and each string "subcat" is attached to the id using for loop function
- 5. Subcategory dataframe is exported as CSV file named as "subcategory.csv" 
+    1. Same as above, with amendment start from no.4 method above
+    2. Once a single subcategory dataframe is made, additional column named "subcategory_id" is created
+    3. The column "category_id" is giving each unique subcategory an id number with a string name "subcat" attached with each number 
+    4. Each id is created using numpy np.arange() function, and each string "subcat" is attached to the id using for loop function
+    5. Subcategory dataframe (subcategory_df) is exported as CSV file named as "subcategory.csv" 
 
 #### Create the Campaign DataFrame
+    1. Using the raw extracted data above rename the dataframe as "campaign_df"
+    2. Rename "blurb, launched_at, deadline" columns into "description", "launched_date", "end_date" separately
+    3. Datatype for goal and pledged are changes to float data type using df.astype() function
+    4. To convert Unixtimestamp (integer) into date format (year-month-day), import datetime from datetime library
+    5. This processed campaign_df dataframe is then joined with above 2 dataframes (category_df, and subcategory_df) using merge() function on left join with "category" column, and "subcategory" column. 
+    6. Once merged as "campaign_merged_df", unnenecassry columns are deleted using df.drop() function
+    7. The final prcoessed data named as "campaign_cleaned" is then exported as CSV file named as "campaign.csv"
+
 #### Create the Contacts DataFrame
 
 ### Data Storage
