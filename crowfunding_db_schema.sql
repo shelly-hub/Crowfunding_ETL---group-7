@@ -1,14 +1,20 @@
+DROP DATABASE IF EXISTS crowfunding_db;
+
+CREATE DATABASE crowfunding_db;
+
+-- Change connection to crowfunding_db
+
 DROP TABLE IF EXISTS campaign;
 DROP TABLE IF EXISTS contacts;
 DROP TABLE IF EXISTS subcategory;
 DROP TABLE IF EXISTS category;
 
 CREATE TABLE category(
-			category_id VARCHAR (255) PRIMARY KEY,
+			category_id VARCHAR (50) PRIMARY KEY,
 			category VARCHAR (255));
 
 CREATE TABLE subcategory (
-			subcategory_id VARCHAR (255) PRIMARY KEY,
+			subcategory_id VARCHAR (50) PRIMARY KEY,
 			subcategory VARCHAR (255));
 
 CREATE TABLE contacts(
@@ -26,7 +32,7 @@ CREATE TABLE campaign(
 			goal FLOAT, 
 			pledged FLOAT NOT NULL,
 			outcome VARCHAR (255), 
-			backers_count FLOAT NOT NULL,
+			backers_count INT NOT NULL,
 			country VARCHAR,
 			currency VARCHAR,
 			launched_date DATE,
@@ -37,6 +43,8 @@ CREATE TABLE campaign(
 			FOREIGN KEY(subcategory_id)REFERENCES subcategory(subcategory_id));
 	
 ALTER DATABASE "crowfunding_db" SET datestyle = "ISO, YMD";
+
+-- IMPORT CSV FILES IN THE ORDER OF TABLES CREATED
 
 SELECT * FROM category;
 
