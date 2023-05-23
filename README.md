@@ -98,4 +98,4 @@ This mini project is separated into 2 sections. One is data extraction and trans
 	 - How to drop one or multiple columns in Pandas Dataframe.(N.D.). Geeksforgeeks. Retrieved on 18/05/2023, from:<https://www.geeksforgeeks.org/how-to-drop-one-or-multiple-columns-in-pandas-dataframe/>
 	 - SQL CREATE DATABASE Statement.(2023). W3Schools. Retrieved on 22/05/2023, from:<https://www.w3schools.com/sql/sql_create_db.asp>
 	 - Module 9: SQL(16/4/23).Monash University Bootcamp Tutorial, Retrieved on 17/05/2023
-         -  Module 12: NoSQL Databases (15/5/23). Monash University Bootcamp Tutorial, Retrieved on 17/05/2023
+         - Module 12: NoSQL Databases (15/5/23). Monash University Bootcamp Tutorial, Retrieved on 17/05/2023
