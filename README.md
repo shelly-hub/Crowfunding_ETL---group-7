@@ -89,13 +89,14 @@ This mini project is separated into 2 sections. One is data extraction and trans
 
 
 ## References
-	 - How to obtain a concise summary of a DataFrame in Pandas.(2023). Educative. Retrieved on 16/05/2023, from:< https://www.educative.io/answers/how-to-obtain-a-concise-summary-of-a-dataframe-in-pandas>
-	 - pandas.Series.str.rsplit.(2023). pandas. Retrieved on 16/05/2023, from:<https://pandas.pydata.org/docs/reference/api/pandas.Series.str.rsplit.html>
-	 - Get list from pandas dataframe column or row?.(6/01/2019). Stack Overflow. Retrieved on 16/05/2023, from:< https://stackoverflow.com/questions/22341271/get-list-from-pandas-dataframe-column-or-row>
-	 - Python - List Comprehension.(2023). TutorialsTeacher. Retrieved on 16/05/2023, from:<https://www.tutorialsteacher.com/python/python-list-comprehension
-	 - TypeError: 'list' object cannot be interpreted as an integer.(20/01/2015).StackOverflow. Retrieved on 17/05/2023, from:<https://stackoverflow.com/questions/28036309/typeerror-list-object-cannot-be-interpreted-as-an-integer>
-	 - Python strftime(). (N.D.). Programiz.Retrieved on 17/05/2023, from:<https://www.programiz.com/python-programming/datetime/strftime>
-	 - How to drop one or multiple columns in Pandas Dataframe.(N.D.). Geeksforgeeks. Retrieved on 18/05/2023, from:<https://www.geeksforgeeks.org/how-to-drop-one-or-multiple-columns-in-pandas-dataframe/>
-	 - SQL CREATE DATABASE Statement.(2023). W3Schools. Retrieved on 22/05/2023, from:<https://www.w3schools.com/sql/sql_create_db.asp>
-	 - Module 9: SQL(16/4/23).Monash University Bootcamp Tutorial, Retrieved on 17/05/2023
-         - Module 12: NoSQL Databases (15/5/23). Monash University Bootcamp Tutorial, Retrieved on 17/05/2023
+- How to obtain a concise summary of a DataFrame in Pandas.(2023). Educative. Retrieved on 16/05/2023, from:< https://www.educative.io/answers/how-to-obtain-a-concise-summary-of-a-dataframe-in-pandas>
+- pandas.Series.str.rsplit.(2023). pandas. Retrieved on 16/05/2023, from:<https://pandas.pydata.org/docs/reference/api/pandas.Series.str.rsplit.html>
+- Get list from pandas dataframe column or row?.(6/01/2019). Stack Overflow. Retrieved on 16/05/2023, from:< https://stackoverflow.com/questions/22341271/get-list-from-pandas-dataframe-column-or-row>
+- Python - List Comprehension.(2023). TutorialsTeacher. Retrieved on 16/05/2023, from:<https://www.tutorialsteacher.com/python/python-list-comprehension
+- TypeError: 'list' object cannot be interpreted as an integer.(20/01/2015).StackOverflow. Retrieved on 17/05/2023, from:<https://stackoverflow.com/questions/28036309/typeerror-list-object-cannot-be-interpreted-as-an-integer>
+- Python strftime(). (N.D.). Programiz.Retrieved on 17/05/2023, from:<https://www.programiz.com/python-programming/datetime/strftime>
+- How to drop one or multiple columns in Pandas Dataframe.(N.D.). Geeksforgeeks. Retrieved on 18/05/2023, from:<https://www.geeksforgeeks.org/how-to-drop-one-or-multiple-columns-in-pandas-dataframe/>
+- SQL CREATE DATABASE Statement.(2023). W3Schools. Retrieved on 22/05/2023, from:<https://www.w3schools.com/sql/sql_create_db.asp>
+- Module 9: SQL(16/4/23).Monash University Bootcamp Tutorial, Retrieved on 17/05/2023
+- Module 12: NoSQL Databases (15/5/23). Monash University Bootcamp Tutorial, Retrieved on 17/05/2023
+- Module 13: Transformation and Cleaning with Regular Expressions (18/5/2023), Retrieved on 20/05/2023
