@@ -17,6 +17,7 @@ This mini project is separated into 2 sections. One is data extraction and trans
 
 ### Disadvantage of ETL:
 - Updated Collection/Database cannot get back to original document even after restarting the kernel, hence need to re-import the whole file again
+- Constant update data is needed for context that is easily changeable
 
 ## Project Method
 ### I) Data Extraction and Transformation
