@@ -53,7 +53,7 @@ This mini project is separated into 2 sections. One is data extraction and trans
     7.Merge the campaign df with category df on category column 
     8. Drop unwanted columns
     9. Export contacts to csv file
-### II) Data Storage
+    
 #### Use Pandas to create Contacts data frame
     1. Import json and print dictionary values 
     2. Check the data types
@@ -80,7 +80,8 @@ This mini project is separated into 2 sections. One is data extraction and trans
     15. Re-order the columns 
     16. Check the data types 
     17. Export the data frame to CSV 
-    
+ 
+### II) Data Storage
 #### Create the Crowdfunding Database
     1. ERD sketch of the relationships of 4 tables made above
     2.  Using pgAdmin4 app, create database crowdfunding_db on the left tab
