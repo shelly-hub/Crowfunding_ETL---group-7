@@ -10,7 +10,7 @@ This mini project is separated into 2 sections. One is data extraction and trans
  - The second part of the project would then sketch ERD of the tables to identify the relationships of these tables by identifying primary and foreign keys. Subsequently, CSV files would be imported into Postrgres database.  
 
 ### Advantages of ETL:
-- ETL pipeline has a huge library that can do many analysis in one notebook
+- ETL pipeline uses python that has a huge library which can do many analysis in one notebook
 - Able to extract data from different sources, and combine data into one table
 - No need to create schema and can export data directly
 - Able to transform data into readable format
@@ -45,18 +45,7 @@ This mini project is separated into 2 sections. One is data extraction and trans
     5. This processed campaign_df dataframe is then joined with above 2 dataframes (category_df, and subcategory_df) using merge() function on left join with "category" column, and "subcategory" column. 
     6. Once merged as "campaign_merged_df", unnenecassry columns are deleted using df.drop() function
     7. The final prcoessed data named as "campaign_cleaned" is then exported as CSV file named as "campaign.csv"
-
-#### Create the Contacts DataFrame
-    1. Copy the crowdfunding info_df into a campaign_df
-    2. Rename the blurb, launch and deadline column
-    3. Convert the goal and pledge column to 'float' data type
-    4. Check the data types
-    5. Format the launch date and end date columns to datetime format
-    6. Create dataframe of data 
-    7.Merge the campaign df with category df on category column 
-    8. Drop unwanted columns
-    9. Export contacts to csv file
-    
+   
 #### Use Pandas to create Contacts data frame
     1. Import json and print dictionary values 
     2. Check the data types
