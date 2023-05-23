@@ -9,13 +9,13 @@ This mini project is separated into 2 sections. One is data extraction and trans
  - The first part of the project would be to process 2 raw data in Excel forms, and extract 4 required information into dataframes and export them each as CSV files. 
  - The second part of the project would then sketch ERD of the tables to identify the relationships of these tables by identifying primary and foreign keys. Subsequently, CSV files would be imported into Postrgres database.  
 
-### Advantage of ETL:
+### Advantages of ETL:
 - ETL pipeline has a huge library that can do many analysis in one notebook
 - Able to extract data from different sources, and combine data into one table
 - No need to create schema and can export data directly
 - Able to transform data into readable format
 
-### Disadvantage of ETL:
+### Disadvantages of ETL:
 - Updated Collection/Database cannot get back to original document even after restarting the kernel, hence need to re-import the whole file again
 - Constant update data is needed for context that is easily changeable
 
