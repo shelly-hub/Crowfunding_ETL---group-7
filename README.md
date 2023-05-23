@@ -11,6 +11,7 @@ This mini project is separated into 2 sections. One is data extraction and trans
 
 ### Advantage of ETL:
 - ETL pipeline has a huge library that can do many analysis in one notebook
+- No need to create schema and can export data directly
 
 ### Disadvantage of ETL:
 - Updated Collection/Database cannot get back to original document even after restarting the kernel, hence need to re-import the whole file again
