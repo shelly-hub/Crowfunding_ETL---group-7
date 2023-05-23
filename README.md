@@ -53,7 +53,7 @@ This mini project is separated into 2 sections. One is data extraction and trans
     8. Drop unwanted columns
     9. Export contacts to csv file
 ### II) Data Storage
-### Use Pandas to create Contacts data frame
+#### Use Pandas to create Contacts data frame
     1. Import json and print dictionary values 
     2. Check the data types
     3. Create first name and last name column from the name column
@@ -61,7 +61,7 @@ This mini project is separated into 2 sections. One is data extraction and trans
     5. Check the data types
     6. Export data frame to csv file 
 
-### Use regex to create the contacts data frame 
+#### Use regex to create the contacts data frame 
     1. Read in data 
     2. Convert first row into column header
     3. Remove first row 
