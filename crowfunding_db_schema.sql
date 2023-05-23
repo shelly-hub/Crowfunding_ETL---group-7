@@ -1,6 +1,6 @@
-DROP DATABASE IF EXISTS crowfunding_db;
+-- DROP DATABASE IF EXISTS crowfunding_db;
 
-CREATE DATABASE crowfunding_db;
+-- CREATE DATABASE crowfunding_db;
 
 -- Change connection to crowfunding_db
 
