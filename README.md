@@ -48,12 +48,12 @@ This mini project is separated into 2 sections. One is data extraction and trans
     9. Export contacts to csv file
 ### II) Data Storage
 ### Use Pandas to create Contacts data frame
-    1. import json and print dictionary values 
+    1. Import json and print dictionary values 
     2. Check the data types
     3. Create first name and last name column from the name column
     4. Re-order columns - contact id, first name, last name, email
-    5. check the data types
-    6. export data frame to csv file 
+    5. Check the data types
+    6. Export data frame to csv file 
 
 ### Use regex to create the contacts data frame 
     1. Read in data 
@@ -73,62 +73,28 @@ This mini project is separated into 2 sections. One is data extraction and trans
     15. Re-order the columns 
     16. Check the data types 
     17. Export the data frame to CSV 
+    
 #### Create the Crowdfunding Database
-DROP DATABASE IF EXISTS crowfunding_db;
+    1. ERD sketch of the relationships of 4 tables made above
+    2.  Using pgAdmin4 app, create database crowdfunding_db on the left tab
+    3. From crowfunding_db right click to open a "query tool" and open the file "crowdfunding_db_schema.sql"
+    4. Start to run subsequent codes to create tables and relationship made according to ERD sketch
+    5. For "campaign" tables, ensure "outcome" column is not boolean but string (VARCHAR)
+    6. For "campaign" tables, ensure to change database date format by using "SET datestyle"
+    7. Refresh tables by right click on "crowdfunding_db"
+    8. Import 4 CSV files separately from Resources folder by the order of tables are created
+    9. In the Import tab, ensure "Options">"Header" is on so to match column names created
+    10. Check if files are imported successfully by running the code SELECT * (table_name)
+   
 
-CREATE DATABASE crowfunding_db;
-
--- Change connection to crowfunding_db
-
-DROP TABLE IF EXISTS campaign;
-DROP TABLE IF EXISTS contacts;
-DROP TABLE IF EXISTS subcategory;
-DROP TABLE IF EXISTS category;
-
-CREATE TABLE category(
-			category_id VARCHAR (50) PRIMARY KEY,
-			category VARCHAR (255));
-
-CREATE TABLE subcategory (
-			subcategory_id VARCHAR (50) PRIMARY KEY,
-			subcategory VARCHAR (255));
-
-CREATE TABLE contacts(
-			contact_id INT PRIMARY KEY,
-			first_name VARCHAR (255) NOT NULL,
-			last_name VARCHAR (255) NOT NULL,
-			email VARCHAR (255));
-
-CREATE TABLE campaign(
-			cf_id INT,
-			contact_id INT NOT NULL,
-			FOREIGN KEY(contact_id)REFERENCES contacts(contact_id),
-			company_name VARCHAR (255) NOT NULL,
-			description VARCHAR (255),
-			goal FLOAT, 
-			pledged FLOAT NOT NULL,
-			outcome VARCHAR (255), 
-			backers_count INT NOT NULL,
-			country VARCHAR,
-			currency VARCHAR,
-			launched_date DATE,
-			end_date DATE,
-			category_id VARCHAR NOT NULL,
-			FOREIGN KEY(category_id)REFERENCES category(category_id),
-			subcategory_id VARCHAR NOT NULL,
-			FOREIGN KEY(subcategory_id)REFERENCES subcategory(subcategory_id));
-	
-ALTER DATABASE "crowfunding_db" SET datestyle = "ISO, YMD";
-
--- IMPORT CSV FILES IN THE ORDER OF TABLES CREATED
-
-SELECT * FROM category;
-
-SELECT * FROM subcategory;
-
-SELECT * FROM contacts;
-
-SELECT * FROM campaign;
 
 ## References
-
+	 - How to obtain a concise summary of a DataFrame in Pandas.(2023). Educative. Retrieved on 16/05/2023, from:< https://www.educative.io/answers/how-to-obtain-a-concise-summary-of-a-dataframe-in-pandas>
+	 - pandas.Series.str.rsplit.(2023). pandas. Retrieved on 16/05/2023, from:<https://pandas.pydata.org/docs/reference/api/pandas.Series.str.rsplit.html>
+	 - Get list from pandas dataframe column or row?.(6/01/2019). Stack Overflow. Retrieved on 16/05/2023, from:< https://stackoverflow.com/questions/22341271/get-list-from-pandas-dataframe-column-or-row>
+	 - Python - List Comprehension.(2023). TutorialsTeacher. Retrieved on 16/05/2023, from:<https://www.tutorialsteacher.com/python/python-list-comprehension
+	 - TypeError: 'list' object cannot be interpreted as an integer.(20/01/2015).StackOverflow. Retrieved on 17/05/2023, from:<https://stackoverflow.com/questions/28036309/typeerror-list-object-cannot-be-interpreted-as-an-integer>
+	 - Python strftime(). (N.D.). Programiz.Retrieved on 17/05/2023, from:<https://www.programiz.com/python-programming/datetime/strftime>
+	 - How to drop one or multiple columns in Pandas Dataframe.(N.D.). Geeksforgeeks. Retrieved on 18/05/2023, from:<https://www.geeksforgeeks.org/how-to-drop-one-or-multiple-columns-in-pandas-dataframe/>
+	 - SQL CREATE DATABASE Statement.(2023). W3Schools. Retrieved on 22/05/2023, from:<https://www.w3schools.com/sql/sql_create_db.asp>
+	 - Monash University Bootcamp Tutorial, Retrieved on 17/05/2023
