@@ -11,7 +11,7 @@ This mini project is separated into 2 sections. One is data extraction and trans
 
 ### Advantage of ETL:
 - ETL pipeline has a huge library that can do many analysis in one notebook
-- Able to extract data from different sources
+- Able to extract data from different sources, and combine data into one table
 - No need to create schema and can export data directly
 - Able to transform data into readable format
 
